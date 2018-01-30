@@ -1,0 +1,89 @@
+#outside{
+	z-index:1;
+	position:absolute;
+	background-color: lightgray;
+	width:120%;
+	height:120%;
+	text-align: center;
+	transition:1s;
+	transform-origin: 0;
+}
+.open-card{
+	transform:rotateY(90deg);
+}
+#outside-title{
+	color:black;
+	font-family: 'Knewave', cursive;
+	font-size: 30px;
+	text-align: center;
+}
+#outside-pic{
+	width:100%;
+	height:100%;
+}
+#outside-help{
+	color:black;
+	font-family: 'Knewave', cursive;
+	font-size: 12pt;
+	text-align: center;
+	padding: 20px;
+}
+#inside{
+	z-index:0;
+	position:absolute;
+	background-color: white;
+	width:100%;
+	height: 100%;
+	text-align: center;
+}
+#inside-title{
+	color:black;
+	font-family: 'Knewave', cursive;
+	font-size: 20px;
+	text-align: center;
+}
+#inside-pic{
+	width:80%;
+	height:80%;
+}
+#message{
+	color: black;
+	font-family: 'Arizonia', cursive;
+	font-size: 15pt;
+	text-align: center;
+}
+button{
+	background: silver;
+	font-size: 15px;
+}
+.section-title {
+  margin:5px;
+  color: rgba(33,33,33,0.6);
+  font-size: 15px;
+  text-align: center;
+  padding-right:10%;
+  padding-left: 10%;
+}
+.footer {
+  padding: 20px 40px 30px;
+}
+  .social-media {
+    text-align: center;
+  }
+@media only screen and (max-width:800px) {
+  /* For tablets: */
+  #outside{
+    width:100%;
+  }
+  #inside {
+    width:100%;
+  }
+  .footer{
+    width:100%;
+  }
+}
+@media only screen and (max-width:500px) {
+  /* For mobile phones: */
+  #outside, #inside, .footer {
+    width:100%;
+}
